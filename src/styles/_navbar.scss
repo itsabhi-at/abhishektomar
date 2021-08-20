@@ -1,0 +1,30 @@
+.navbar {
+  @include flex(row, space-between, center);
+  padding: 0rem 5rem;
+  height: 10vh;
+  overflow: hidden;
+  a {
+    color: $font_color;
+    transition: all 0.3s ease;
+    font-weight: lighter;
+    &:hover {
+      color: $hover_color;
+    }
+  }
+
+  svg {
+    height: 10rem;
+    width: 5rem;
+    path {
+      fill: $span_color;
+    }
+  }
+
+  .navlinks {
+    display: flex;
+  }
+  h3 {
+    padding-right: 1.6rem;
+    font-size: 3.2rem;
+  }
+}

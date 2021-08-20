@@ -1,0 +1,59 @@
+// Variables
+
+// $backgroud_color: #6ccecd;
+// $font_color: #fff5c3;
+$font_color: #eef3f5;
+$hover_color: #fff5c3;
+$span_color: #fff5c3;
+$button_color: rgb(37, 37, 37);
+
+// fucntions
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+// global styles
+body {
+  background: rgb(13, 92, 117);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(13, 92, 117, 1) 30%,
+    rgba(25, 159, 177, 1) 75%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(13, 92, 117, 1) 30%,
+    rgba(25, 159, 177, 1) 75%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(13, 92, 117, 1) 30%,
+    rgba(25, 159, 177, 1) 75%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0d5c75",endColorstr="#199fb1",GradientType=1);
+}
+
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  // background-color: $backgroud_color;
+}
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+}
+
+// imports
+
+@import "./navbar";
+@import "./aboutsection";
+@import "./servicesection";
+@import "./portfolio";

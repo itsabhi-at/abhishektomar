@@ -24,12 +24,7 @@ function Portfolio() {
         <div className="card"></div>
         <div className="card"></div>
         <div className="card"></div>
-
-        <div className="card">
-          <img src={foodapi} alt="foodapi" />
-          <h3>Food Recipe App</h3>
-          <h4>HTML,SCSS,Javascript</h4>
-        </div>
+        <Card image={foodapi} name="Foodie" tech="HTML,SCSS,Javascript" />
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import React from "react";
 import poocs from "../images/poocs.png";
 import foodapi from "../images/foodapi.png";
 import consultancy from "../images/consultancy.png";
+import Card from "../components/Card";
 
 function Portfolio() {
   return (
@@ -18,19 +19,12 @@ function Portfolio() {
         </div>
       </div>
       <div className="works">
-        <div className="card">
-          <img src={poocs} alt="poocs" />
-          <h3>Poocs.in</h3>
-          <h4>React,Firebase,Express</h4>
-        </div>
-        <div className="card">
-          <img src={consultancy} alt="consultancy" />
-          <h3>DAPS</h3>
-          <h4>HTML,SCSS,Javascript</h4>
-        </div>
+        <Card image={poocs} name="Poocs.in" tech="React,Firebase,Express" />
+        <Card image={consultancy} name="DAPS" tech="HTML,SCSS,Javascript" />
         <div className="card"></div>
         <div className="card"></div>
         <div className="card"></div>
+
         <div className="card">
           <img src={foodapi} alt="foodapi" />
           <h3>Food Recipe App</h3>
